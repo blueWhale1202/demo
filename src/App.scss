@@ -7,3 +7,129 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.app-container {
+    padding-top: 56px;
+    .header-container {
+        .btn-login {
+            cursor: pointer;
+            font-family: inherit;
+            -webkit-box-pack: center;
+            justify-content: center;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            line-height: 1.5;
+            color: rgb(38, 38, 39);
+            border-radius: 4px;
+            transition: background-color 0.2s ease-out 0s, border-color, color,
+                opacity;
+            padding: 8px 16px;
+            background: transparent;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(38, 38, 39);
+            border-image: initial;
+            margin-right: 16px;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        .btn-signup {
+            &:hover {
+                opacity: 0.8;
+            }
+            cursor: pointer;
+            font-family: inherit;
+            -webkit-box-pack: center;
+            justify-content: center;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            line-height: 1.5;
+            color: rgb(255, 255, 255);
+            border-radius: 4px;
+            transition: background-color 0.2s ease-out 0s, border-color, color,
+                opacity;
+            padding: 8px 16px;
+            background: rgb(38, 38, 39);
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(38, 38, 39);
+            border-image: initial;
+        }
+
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+        .navbar {
+            padding: 20px;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0) !important;
+            .nav-link {
+                &.active {
+                    color: #00bfff;
+                }
+            }
+        }
+    }
+
+    .homepage-container {
+        position: relative;
+        .homepage-content {
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .homepage-title {
+                font-size: 50px;
+                line-height: 1.2;
+            }
+
+            .homepage-sub-title {
+                font-size: 25px;
+                line-height: 1.3;
+            }
+
+            .homepage-btn {
+                button {
+                    cursor: pointer;
+                    font-family: inherit;
+                    -webkit-box-pack: center;
+                    justify-content: center;
+                    text-align: center;
+                    display: inline-block;
+
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: rgb(255, 255, 255);
+                    border-radius: 4px;
+                    transition: background-color 0.2s ease-out 0s, border-color,
+                        color, opacity;
+                    padding: 12px 24px;
+                    background: rgb(38, 38, 39);
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: rgb(38, 38, 39);
+                    border-image: initial;
+                    color: rgb(252, 250, 248);
+                    font-size: 16px;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+video {
+    margin-top: -56px;
+    width: 100vw;
+    bottom: 0;
+}
